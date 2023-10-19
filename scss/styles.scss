@@ -24,13 +24,14 @@ header {
     top: -1px;                                 
 }
 footer{
-    background-color: rgba(85, 84, 84, 0.629);
+    
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;    
+    background-image: linear-gradient(to bottom, gray, black);
 }
 /*nav*/
 .navbar-brand{
@@ -613,10 +614,10 @@ input:focus{
 .derechos{
     width: 100%;
     height: auto;
-    background-color:rgb(54, 54, 54) ;
     color: white;
     font-size: 0.5em;
     border-radius: 10px; 
+    background-image:radial-gradient(gray, black) ;
 }
 
 

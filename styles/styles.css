@@ -23,13 +23,13 @@ header {
 }
 
 footer {
-  background-color: rgba(85, 84, 84, 0.629);
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-image: linear-gradient(to bottom, gray, black);
 }
 
 /*nav*/
@@ -534,7 +534,7 @@ input:focus {
   margin-top: 30px;
 }
 .ofertas-del-mes3:hover {
-  border: 2px solid yellow;
+  border: 2px solid #ed6fd3;
 }
 
 .img-off {
@@ -559,7 +559,7 @@ input:focus {
 }
 .btn-off:hover {
   cursor: pointer;
-  background-color: rgb(195, 16, 100);
+  background-color: #ed6fd3;
   color: wheat;
 }
 
@@ -608,7 +608,7 @@ input:focus {
 }
 
 .hover:hover {
-  border: 3px solid rgb(233, 54, 159);
+  border: 3px solid #ed6fd3;
   cursor: pointer;
 }
 
@@ -635,10 +635,10 @@ input:focus {
 .derechos {
   width: 100%;
   height: auto;
-  background-color: rgb(54, 54, 54);
   color: white;
   font-size: 0.5em;
   border-radius: 10px;
+  background-image: radial-gradient(gray, black);
 }
 
 .marca {
@@ -653,7 +653,7 @@ input:focus {
   padding: 10px 0px 20px 0px;
 }
 .ayuda:hover {
-  color: rgb(195, 16, 100);
+  color: #ed6fd3;
 }
 
 p {
