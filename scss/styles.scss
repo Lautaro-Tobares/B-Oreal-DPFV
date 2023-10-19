@@ -517,7 +517,7 @@ input:focus{
     background-color: rgba(255, 255, 255, 0.851);
     margin-top: 30px;
     &:hover {
-        border: 2px solid yellow;
+        border: 2px solid $hover-button-color;
      }
  }
  .img-off {
@@ -539,7 +539,7 @@ input:focus{
     margin-top: 10px;
     &:hover {
         cursor: pointer;
-        background-color:rgb(195, 16, 100) ;
+        background-color:$hover-button-color ;
         color: wheat;
     }
     
@@ -588,7 +588,7 @@ input:focus{
     border: 1px solid rgb(86, 86, 86);
 }
 .hover:hover{
-    border: 3px solid rgb(233, 54, 159); 
+    border: 3px solid $hover-button-color; 
     cursor: pointer;
 }
 .footer{
@@ -630,7 +630,7 @@ input:focus{
     font-size: 0.5em; 
     padding: 10px 0px 20px 0px;
     &:hover{
-        color: rgb(195, 16, 100) ;
+        color: $hover-button-color ;
     }
 }
 
