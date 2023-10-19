@@ -494,7 +494,7 @@ input:focus {
   margin: 0px auto 0px auto;
   box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
   margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.851);
+  background-image: linear-gradient(black, white);
 }
 .ofertas-del-mes1:hover {
   border: 2px solid #ed6fd3;
@@ -512,7 +512,7 @@ input:focus {
   font-weight: bold;
   margin: 0px auto 0px auto;
   box-shadow: 3px -3px 3px 0px rgba(219, 191, 134, 0.4);
-  background-color: rgba(255, 255, 255, 0.851);
+  background-image: linear-gradient(black, white);
 }
 .ofertas-del-mes2:hover {
   border: 2px solid #ed6fd3;
@@ -530,7 +530,7 @@ input:focus {
   font-weight: bold;
   margin: 0px auto 0px auto;
   box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
-  background-color: rgba(255, 255, 255, 0.851);
+  background-image: linear-gradient(black, white);
   margin-top: 30px;
 }
 .ofertas-del-mes3:hover {
@@ -638,7 +638,7 @@ input:focus {
   color: white;
   font-size: 0.5em;
   border-radius: 10px;
-  background-image: radial-gradient(gray, black);
+  background-image: linear-gradient(rgb(100, 100, 100), black);
 }
 
 .marca {
