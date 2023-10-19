@@ -483,7 +483,7 @@ input:focus{
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.851);
     &:hover {
-        border: 2px solid yellow;
+        border: 2px solid $hover-button-color;
      }
     }
  .ofertas-del-mes2{
@@ -497,10 +497,10 @@ input:focus{
     border: 1px solid rgb(200, 200, 200);
     font-weight: bold;
     margin: 0px auto 0px auto;
-    box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.40);
+    box-shadow: 3px -3px 3px 0px rgba(219, 191, 134, 0.4);
     background-color: rgba(255, 255, 255, 0.851);
     &:hover {
-        border: 2px solid yellow;
+        border: 2px solid $hover-button-color;
      }
 }
  .ofertas-del-mes3{
