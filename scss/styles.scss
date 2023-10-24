@@ -1,8 +1,8 @@
 @import 'vars';
 @import 'mixins';
 @import 'reset';
-@import 'animaciones';
-@import 'animate.css';
+
+
 
 
 .mobile {
@@ -125,8 +125,7 @@ form{
     background-color: #ffff45 ;
     font-weight: bold;
     padding: 5px 5px 5px 5px;
-    animation: bounce;
-    animation-duration: 2s;
+    
 }
 .resaltar2{
     background-color: aliceblue;
