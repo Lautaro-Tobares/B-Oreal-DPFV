@@ -1,0 +1,24 @@
+@mixin carta_oferta {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    font-weight: bold;
+    margin: 0px auto 0px auto;
+    box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.40);
+    margin-top: 30px;
+    background-image: linear-gradient(black, white);
+    &:hover {
+        border: 2px solid $hover-button-color;
+     }
+    
+}
+@mixin tamanio-img-off {
+    width: 32%;
+    height: 50%;
+    border-radius: 20px;
+    border: 1px solid rgb(86, 86, 86);
+}

@@ -511,7 +511,8 @@ input:focus {
   border: 1px solid rgb(200, 200, 200);
   font-weight: bold;
   margin: 0px auto 0px auto;
-  box-shadow: 3px -3px 3px 0px rgba(219, 191, 134, 0.4);
+  box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
+  margin-top: 30px;
   background-image: linear-gradient(black, white);
 }
 .ofertas-del-mes2:hover {
@@ -530,8 +531,8 @@ input:focus {
   font-weight: bold;
   margin: 0px auto 0px auto;
   box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
-  background-image: linear-gradient(black, white);
   margin-top: 30px;
+  background-image: linear-gradient(black, white);
 }
 .ofertas-del-mes3:hover {
   border: 2px solid #ed6fd3;

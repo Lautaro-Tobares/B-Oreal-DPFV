@@ -1,5 +1,5 @@
 @import 'vars';
-
+@import 'mixins';
 * {
     padding: 0;
     margin: 0;
@@ -470,56 +470,16 @@ input:focus{
 
  .ofertas-del-mes1{
     grid-area: ofertas-del-mes1;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid rgb(200, 200, 200);
-    font-weight: bold;
-    margin: 0px auto 0px auto;
-    box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.40);
-    margin-top: 30px;
-    background-image: linear-gradient(black, white);
-    &:hover {
-        border: 2px solid $hover-button-color;
-     }
-    }
+    @include carta_oferta;
+ }
+    
  .ofertas-del-mes2{
     grid-area: ofertas-del-mes2;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid rgb(200, 200, 200);
-    font-weight: bold;
-    margin: 0px auto 0px auto;
-    box-shadow: 3px -3px 3px 0px rgba(219, 191, 134, 0.4);
-    background-image: linear-gradient(black, white);
-    &:hover {
-        border: 2px solid $hover-button-color;
-     }
+    @include carta_oferta;
 }
  .ofertas-del-mes3{
     grid-area: ofertas-del-mes3;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid rgb(200, 200, 200);
-    font-weight: bold;
-    margin: 0px auto 0px auto;
-    box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.40);
-    background-image: linear-gradient(black, white);
-    margin-top: 30px;
-    &:hover {
-        border: 2px solid $hover-button-color;
-     }
+    @include carta_oferta;
  }
  .img-off {
     width: 200px;
@@ -571,22 +531,13 @@ input:focus{
     background-color: rgb(248, 175, 175);
 }
 .img1{   
-    width: 32%;
-    height: 50%;
-    border-radius: 20px;
-    border: 1px solid rgb(86, 86, 86);
+   @include tamanio-img-off
 }
 .img2{
-    width: 32%;
-    height: 50%;
-    border-radius: 20px;
-    border: 1px solid rgb(86, 86, 86);
+    @include tamanio-img-off
 }
 .img3{
-    width: 32%;
-    height: 50%;
-    border-radius: 20px;
-    border: 1px solid rgb(86, 86, 86);
+    @include tamanio-img-off 
 }
 .hover:hover{
     border: 3px solid $hover-button-color; 
