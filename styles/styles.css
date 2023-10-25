@@ -9,7 +9,7 @@
 }
 
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: aliceblue;
   width: 100%;
   height: 40px;
   position: fixed;
@@ -23,7 +23,7 @@ header {
 }
 
 footer {
-  color: rgb(255, 255, 255);
+  color: aliceblue;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,7 +74,7 @@ nav ul {
   list-style: none;
   overflow: hidden;
   margin-bottom: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: aliceblue;
   width: 100vw;
 }
 nav ul li {
@@ -88,7 +88,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: #ed6fd3;
-  color: wheat;
+  color: aliceblue;
 }
 
 a {
@@ -268,10 +268,10 @@ form {
 .img-movil button {
   width: 20vw;
   height: 5vh;
-  color: white;
+  color: aliceblue;
   margin: 5px;
   background-color: rgba(0, 255, 255, 0.146);
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid aliceblue;
   font-size: 1.1em;
 }
 .img-movil button:hover {
@@ -281,7 +281,7 @@ form {
 .ofertas {
   background-color: rgb(3, 3, 3);
   font-size: 18px;
-  color: whitesmoke;
+  color: aliceblue;
   width: 100%;
   font-weight: 700;
 }
@@ -341,7 +341,7 @@ form {
   width: 80%;
   margin-bottom: 10px;
   background-color: rgb(58, 57, 57);
-  color: white;
+  color: aliceblue;
   padding: 10px;
   border: 1px solid rgb(195, 16, 100);
   border-radius: 4px;
@@ -358,7 +358,7 @@ input:focus {
 .sumate {
   padding-top: 15px;
   padding-bottom: 4px;
-  color: aliceblue;
+  color: a aliceblue;
 }
 
 .leore {
@@ -442,7 +442,7 @@ input:focus {
 }
 .img-catalogo button {
   background-color: rgb(31, 30, 30);
-  color: white;
+  color: aliceblue;
   width: 150px;
   height: 40px;
   border-radius: 10px;
@@ -450,7 +450,7 @@ input:focus {
 .img-catalogo button:hover {
   cursor: pointer;
   background-color: #ed6fd3;
-  color: wheat;
+  color: aliceblue;
 }
 
 /*ofertas*/
@@ -540,7 +540,7 @@ input:focus {
 
 .img-off {
   width: 200px;
-  border: 10px solid rgb(255, 255, 255);
+  border: 10px solid aliceblue;
   border-radius: 40%;
 }
 
@@ -551,7 +551,7 @@ input:focus {
 
 .btn-off {
   background-color: rgb(31, 30, 30);
-  color: white;
+  color: aliceblue;
   width: 60%;
   height: 40px;
   border-radius: 10px;
@@ -561,7 +561,7 @@ input:focus {
 .btn-off:hover {
   cursor: pointer;
   background-color: #ed6fd3;
-  color: wheat;
+  color: aliceblue;
 }
 
 .off-titulo {
@@ -636,7 +636,7 @@ input:focus {
 .derechos {
   width: 100%;
   height: auto;
-  color: white;
+  color: aliceblue;
   font-size: 0.5em;
   border-radius: 10px;
   background-image: linear-gradient(rgb(100, 100, 100), black);
@@ -715,7 +715,7 @@ p {
   }
   a.nav-link {
     background-color: rgba(35, 35, 35, 0.6235294118);
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     font-size: 1.2em;
     border: 3px solid rgba(149, 8, 123, 0.4705882353);
     border-left: none;
@@ -725,7 +725,7 @@ p {
   }
   .offcanvas-header {
     padding-top: 50px;
-    color: #ffffff;
+    color: aliceblue;
   }
   .text-bg-dark {
     background-color: rgba(0, 0, 0, 0.4705882353) !important;
@@ -890,7 +890,7 @@ p {
   .img-off {
     width: 90%;
     height: auto;
-    border: 10px solid rgb(255, 255, 255);
+    border: 10px solid aliceblue;
     border-radius: 50%;
   }
   .btn-off {

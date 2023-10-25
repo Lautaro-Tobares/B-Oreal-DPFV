@@ -10,7 +10,7 @@
 }
 header {
     
-    background-color: rgb(255, 255, 255);
+    background-color: $color-claro;
     width: 100%;
     height: 40px;
     position: fixed;
@@ -24,7 +24,7 @@ header {
 }
 footer{
     
-    color: rgb(255, 255, 255);
+    color: $color-claro;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,7 +69,7 @@ nav {
         list-style: none;
         overflow: hidden; 
         margin-bottom: 0;
-        background-color: rgb(255, 255, 255);
+        background-color: $color-claro;
         width: 100vw;
         li {
             float: left;
@@ -80,7 +80,7 @@ nav {
                 padding: 10px;
                 &:hover{
                     background-color: $hover-button-color  ;
-                    color: wheat;
+                    color: $color-claro;
                 }
             }
         }
@@ -128,7 +128,7 @@ form{
     
 }
 .resaltar2{
-    background-color: aliceblue;
+    background-color: $color-claro;
 }
  .video {
     width: 50vw;
@@ -254,10 +254,10 @@ width: 100%;
     button{
         width: 20vw;
         height: 5vh;
-        color: white;
+        color: $color-claro;
         margin: 5px;
         background-color: rgba(0, 255, 255, 0.146);
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid $color-claro;
         font-size: 1.1em;
         &:hover{
             background-color: $hover-button-color;
@@ -270,7 +270,7 @@ width: 100%;
 .ofertas{   
     background-color: rgb(3, 3, 3);
     font-size: 18px;
-    color: whitesmoke;
+    color: $color-claro;
     width: 100%;
     font-weight: 700;
  }
@@ -330,7 +330,7 @@ width: 100%;
   width: 80%;
   margin-bottom: 10px;
   background-color: rgb(58, 57, 57);
-  color: white;
+  color: $color-claro;
   padding: 10px;
   border: 1px solid rgb(195, 16, 100) ;
   border-radius: 4px;
@@ -346,7 +346,7 @@ input:focus{
  .sumate {   
     padding-top: 15px;
     padding-bottom: 4px;
-    color: aliceblue;
+    color: a$color-claro;
  }
  .leore{
     font-size: 35px;
@@ -362,16 +362,16 @@ input:focus{
     width: 200px;
     height: 30px;
     margin-left: 120px;
-    color: aliceblue;
+    color: $color-claro;
     background-color: black;
     border-radius: 8px;   
     &:hover {
         background-color: $hover-button-color;
-        color: aliceblue;
+        color: $color-claro;
     }
 }
 .acepto{
-    color: aliceblue;
+    color: $color-claro;
 }
 
 /*catalogo*/
@@ -420,14 +420,14 @@ input:focus{
     }
     button{
         background-color: rgb(31, 30, 30);
-        color: white;
+        color: $color-claro;
         width: 150px;
         height: 40px;
         border-radius: 10px;
         &:hover{
             cursor: pointer;
             background-color:$hover-button-color ;
-            color: wheat;
+            color: $color-claro;
         }
     }
 }
@@ -483,7 +483,7 @@ input:focus{
  }
  .img-off {
     width: 200px;
-    border: 10px solid rgb(255, 255, 255);
+    border: 10px solid $color-claro;
     border-radius: 40%;
  }
 .rojo{
@@ -492,7 +492,7 @@ input:focus{
 }
 .btn-off {
     background-color: rgb(31, 30, 30);
-    color: white;
+    color: $color-claro;
     width: 60%;
     height: 40px;
     border-radius: 10px;
@@ -501,7 +501,7 @@ input:focus{
     &:hover {
         cursor: pointer;
         background-color:$hover-button-color ;
-        color: wheat;
+        color: $color-claro;
     }
     
 }
@@ -565,7 +565,7 @@ input:focus{
 .derechos{
     width: 100%;
     height: auto;
-    color: white;
+    color: $color-claro;
     font-size: 0.5em;
     border-radius: 10px; 
     background-image:linear-gradient(rgb(100, 100, 100), black);
@@ -644,7 +644,7 @@ nav ul{
 }
 a.nav-link{
     background-color: #2323239f;
-    color: rgb(255, 255, 255);
+    color: $color-claro;
     font-size: 1.2em;
     border:3px solid #95087b78;
     border-left: none;
@@ -654,7 +654,7 @@ a.nav-link{
 }
 .offcanvas-header{
     padding-top: 50px;
-    color: #ffffff;
+    color: $color-claro;
 } 
 .text-bg-dark {
     background-color: #00000078 !important; 
@@ -801,7 +801,7 @@ a.nav-link{
 .img-off{
     width: 90%;
     height: auto;
-    border: 10px solid rgb(255, 255, 255);
+    border: 10px solid $color-claro;
     border-radius: 50%;
 }
 .btn-off{
