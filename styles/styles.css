@@ -649,12 +649,12 @@ input:focus {
   padding-top: 20px;
 }
 
-.ayuda {
+.ayuda a {
   font-size: 0.5em;
   padding: 10px 0px 20px 0px;
   color: white;
 }
-.ayuda:hover {
+.ayuda a:hover {
   color: #ed6fd3;
 }
 
