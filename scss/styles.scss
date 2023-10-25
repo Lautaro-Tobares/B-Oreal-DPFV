@@ -581,7 +581,7 @@ input:focus{
 .ayuda a {
     font-size: 0.5em; 
     padding: 10px 0px 20px 0px;
-    color: wheat;
+    color: $color-claro;
     &:hover{
         color: $hover-button-color ;
     }
