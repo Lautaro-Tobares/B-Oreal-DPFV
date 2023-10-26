@@ -3,7 +3,26 @@
 @import 'reset';
 
 
+.div-error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 
+}
+
+.img-error {
+    width: 500px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.volver-404 {
+    font-size: 2em;
+    
+}
 
 .mobile {
     display: none;
