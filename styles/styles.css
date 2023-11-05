@@ -34,11 +34,13 @@ header {
   position: fixed;
   z-index: 100;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   top: -1px;
+  text-align: center;
+  margin: auto;
 }
 
 footer {
@@ -87,22 +89,28 @@ footer {
 }
 
 nav {
-  width: 94%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 nav ul {
   list-style: none;
   overflow: hidden;
   margin-bottom: 0;
-  background-color: aliceblue;
+  background-color: white;
   width: 100vw;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
 }
 nav ul li {
-  float: left;
+  display: inline;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
 }
 nav ul li a {
-  display: block;
   padding: 10px;
 }
 nav ul li a:hover {
@@ -113,11 +121,6 @@ nav ul li a:hover {
 a {
   color: black;
   text-decoration: none;
-}
-
-header img {
-  width: 40px;
-  height: 40px;
 }
 
 main {
@@ -230,7 +233,7 @@ form {
   width: 90%;
   height: 40px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .promo-input {
@@ -242,14 +245,15 @@ form {
   font-size: 16px;
   box-shadow: 4px -4px 4px 4px rgba(78, 71, 71, 0.281);
 }
-
-::placeholder {
-  color: black;
+.promo-input::placeholder {
+  color: white;
+  font-weight: bold;
 }
 
 #susc-btn {
   background-color: black;
   color: aliceblue;
+  margin: 15px 0 15px 0;
 }
 
 .img-descuentos {
@@ -261,7 +265,7 @@ form {
   justify-content: center;
 }
 .img-descuentos img {
-  width: 90%;
+  width: 60%;
   height: auto;
   margin-bottom: 40px;
 }
@@ -313,8 +317,9 @@ form {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90vw;
-  height: 120vh;
+  margin: auto;
+  width: 60vw;
+  height: 60vh;
 }
 .mapa iframe {
   width: 100%;
@@ -325,6 +330,7 @@ form {
 .h1-mapa {
   font-size: 20px;
   margin-top: 50px;
+  text-align: center;
 }
 
 /*trabaja con nosotros*/
@@ -338,7 +344,6 @@ form {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 50px 0px 20px 0px;
-  border-radius: 420px;
   box-shadow: 20px 220px 20px 0px rgba(41, 41, 40, 0.4), 220px 220px 220px 220px rgb(240, 125, 205);
 }
 
@@ -412,6 +417,8 @@ input:focus {
 /*catalogo*/
 .titulo-catalogo {
   font-weight: 300;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .subtitulo-catalogo {
@@ -447,6 +454,7 @@ input:focus {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .img-catalogo {
@@ -471,6 +479,21 @@ input:focus {
   background-color: #ed6fd3;
   color: aliceblue;
 }
+.img-catalogo img {
+  object-fit: contain;
+  max-width: 100%;
+  height: 200px;
+}
+
+.cuotas-catalogo {
+  color: green;
+  font-weight: bold;
+}
+
+.precio-catalogo {
+  font-weight: bold;
+  font-size: 1.3em;
+}
 
 /*ofertas*/
 .container-ofertas {
@@ -480,7 +503,6 @@ input:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 0.3fr 0.3fr 0.1fr;
   grid-template-areas: "ofertas-pigmento ofertas-pigmento ofertas-pigmento" "ofertas-del-mes1 ofertas-del-mes2 ofertas-del-mes3" "publicidad1 publicidad1 publicidad1" "footer footer footer";
-  background-image: url(../multimedia/aurora-polar-en-las-montanas-arte-digital_3840x2160_xtrafondos.com.jpg);
 }
 
 .publicidad1 {
@@ -489,7 +511,7 @@ input:focus {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 280px;
+  height: 400px;
   -webkit-text-stroke: 1px black;
   display: flex;
   justify-content: center;
@@ -508,15 +530,14 @@ input:focus {
   justify-content: flex-end;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid rgb(200, 200, 200);
-  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5em;
   margin: 0px auto 0px auto;
-  box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
+  padding-top: 30px;
+  box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
   margin-top: 30px;
-  background-image: linear-gradient(black, white);
-}
-.ofertas-del-mes1:hover {
-  border: 2px solid #ed6fd3;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.507);
 }
 
 .ofertas-del-mes2 {
@@ -527,15 +548,14 @@ input:focus {
   justify-content: flex-end;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid rgb(200, 200, 200);
-  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5em;
   margin: 0px auto 0px auto;
-  box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
+  padding-top: 30px;
+  box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
   margin-top: 30px;
-  background-image: linear-gradient(black, white);
-}
-.ofertas-del-mes2:hover {
-  border: 2px solid #ed6fd3;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.507);
 }
 
 .ofertas-del-mes3 {
@@ -546,26 +566,36 @@ input:focus {
   justify-content: flex-end;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid rgb(200, 200, 200);
-  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5em;
   margin: 0px auto 0px auto;
-  box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.4);
+  padding-top: 30px;
+  box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
   margin-top: 30px;
-  background-image: linear-gradient(black, white);
-}
-.ofertas-del-mes3:hover {
-  border: 2px solid #ed6fd3;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.507);
 }
 
 .img-off {
   width: 200px;
-  border: 10px solid aliceblue;
-  border-radius: 40%;
+  border: 10px solid white;
+  border-radius: 10%;
 }
 
 .rojo {
   color: red;
   text-decoration-line: line-through;
+  margin: 0;
+}
+
+.oferta-negrita {
+  font-weight: bold;
+  margin: 0;
+}
+
+.cuotas-ofertas {
+  font-size: 0.6em;
+  margin: 0;
 }
 
 .btn-off {
@@ -587,7 +617,9 @@ input:focus {
   font-weight: 300;
   display: flex;
   flex-direction: row;
-  text-align: left;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   margin-top: 50px;
 }
@@ -595,15 +627,24 @@ input:focus {
   font-weight: 300;
 }
 
+.envio-off {
+  font-size: 0.6em;
+  font-weight: bold;
+  color: green;
+}
+
 .ofertas-pigmento {
   grid-area: ofertas-pigmento;
   display: flex;
-  width: 100vw;
-  height: 60vh;
+  width: 95vw;
+  height: 50vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(248, 175, 175);
+  background-image: linear-gradient(pink, white);
+  margin: auto;
+  margin-top: 20px;
+  padding: 0 10px 0 10px;
 }
 
 .img1 {
@@ -611,6 +652,7 @@ input:focus {
   height: 50%;
   border-radius: 20px;
   border: 1px solid rgb(86, 86, 86);
+  margin: 10px;
 }
 
 .img2 {
@@ -618,6 +660,7 @@ input:focus {
   height: 50%;
   border-radius: 20px;
   border: 1px solid rgb(86, 86, 86);
+  margin: 10px;
 }
 
 .img3 {
@@ -625,6 +668,7 @@ input:focus {
   height: 50%;
   border-radius: 20px;
   border: 1px solid rgb(86, 86, 86);
+  margin: 10px;
 }
 
 .hover:hover {
@@ -693,7 +737,11 @@ p {
   margin-right: auto;
   padding-top: 30px;
   color: black;
-  max-width: 60%;
+  max-width: fit-content;
+}
+
+.carousel-item {
+  width: 100vw;
 }
 
 @media (max-width: 767px) {
@@ -776,6 +824,10 @@ p {
     width: 90vw;
     max-width: max-content;
   }
+  .img-descuentos img {
+    width: 100vw;
+    height: auto;
+  }
   .novedades-promociones {
     display: flex;
     flex-direction: column;
@@ -812,6 +864,8 @@ p {
     height: 93vh;
   }
   .formulario {
+    padding-top: 0px;
+    margin-top: 0px;
     width: 95%;
     height: auto;
   }
@@ -844,40 +898,37 @@ p {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid rgba(59, 59, 59, 0.456);
     text-align: center;
-    box-shadow: 20px -20px 20px -20px white;
-    border-radius: 20%;
+    box-shadow: 20px -20px 20px -20px rgba(83, 82, 82, 0.4);
     font-size: 20px;
-    background-color: rgba(45, 45, 45, 0.5137254902);
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9647058824);
+    color: #242424;
     font-weight: 300;
+    border: 1px solid rgba(128, 128, 128, 0.507);
   }
   .ofertas-del-mes2 {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid rgba(59, 59, 59, 0.456);
     text-align: center;
-    box-shadow: 20px -20px 20px -20px white;
-    border-radius: 20%;
+    box-shadow: 20px -20px 20px -20px rgba(83, 82, 82, 0.4);
     font-size: 20px;
-    background-color: rgba(45, 45, 45, 0.5137254902);
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9647058824);
+    color: #242424;
     font-weight: 300;
+    border: 1px solid rgba(128, 128, 128, 0.507);
   }
   .ofertas-del-mes3 {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid rgba(59, 59, 59, 0.456);
     text-align: center;
-    box-shadow: 20px -20px 20px -20px white;
-    border-radius: 20%;
+    box-shadow: 20px -20px 20px -20px rgba(83, 82, 82, 0.4);
     font-size: 20px;
-    background-color: rgba(45, 45, 45, 0.5137254902);
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9647058824);
+    color: #242424;
     font-weight: 300;
+    border: 1px solid rgba(128, 128, 128, 0.507);
   }
   .off-titulo {
     margin-top: 50px;
@@ -897,20 +948,21 @@ p {
   .img1 {
     width: 30vw;
     height: auto;
+    display: none;
   }
   .img2 {
-    width: 30vw;
+    width: 45vw;
     height: auto;
   }
   .img3 {
-    width: 30vw;
+    width: 45vw;
     height: auto;
   }
   .img-off {
     width: 90%;
     height: auto;
     border: 10px solid aliceblue;
-    border-radius: 50%;
+    margin-bottom: 15px;
   }
   .btn-off {
     width: 70%;

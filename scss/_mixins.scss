@@ -5,29 +5,29 @@
     justify-content: flex-end;
     align-items: center;
     border-radius: 20px;
-    border: 1px solid rgb(200, 200, 200);
-    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 1.5em;
     margin: 0px auto 0px auto;
-    box-shadow: 3px -3px 3px 0px rgba(137, 133, 125, 0.40);
+    padding-top: 30px;
+    box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
     margin-top: 30px;
-    background-image: linear-gradient(black, white);
-    &:hover {
-        border: 2px solid $hover-button-color;
-     }
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+    
     
 }
 @mixin carta_oferta_mobile {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid rgba(59, 59, 59, 0.456);
     text-align: center;
-    box-shadow: 20px -20px 20px -20px white;
-    border-radius: 20%;
+    box-shadow: 20px -20px 20px -20px rgba(83, 82, 82, 0.4);
     font-size: 20px;
-    background-color: #2d2d2d83;
-    color: #ffffff;
+    background-color: #fffffff6;
+    color: #242424;
     font-weight: 300;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+    
 }
 
 @mixin tamanio-img-off {
