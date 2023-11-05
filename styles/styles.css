@@ -214,6 +214,17 @@ form {
   margin-left: 40px;
 }
 
+.lanzamientos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.lanzamientos img {
+  width: 120px;
+  height: 250px;
+}
+
 .novedades-promociones {
   width: 100%;
 }
