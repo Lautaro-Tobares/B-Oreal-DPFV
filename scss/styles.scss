@@ -892,24 +892,29 @@ a.nav-link{
     grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
    grid-template-areas: 
       'ofertas-pigmento ofertas-pigmento ofertas-pigmento'
-      'ofertas-del-mes1 ofertas-del-mes1 ofertas-del-mes1'
-      'ofertas-del-mes2 ofertas-del-mes2 ofertas-del-mes2'
-      'ofertas-del-mes3 ofertas-del-mes3 ofertas-del-mes3'
+      'ofertas-del-mes1 ofertas-del-mes2 ofertas-del-mes3'
       'publicidad1 publicidad1 publicidad1'
       'footer footer footer'
    
    ;
 }
+.envio-off{
+    font-size: 1.1em;
+}
 .ofertas-del-mes1{
     @include carta_oferta_mobile
   
 }
+
 .ofertas-del-mes2{
     @include carta_oferta_mobile
 }
+
 .ofertas-del-mes3{
    @include carta_oferta_mobile
 }
+
+
 .off-titulo {
     margin-top: 50px;}
 .publicidad1{
@@ -942,7 +947,6 @@ a.nav-link{
 .img-off{
     width: 90%;
     height: auto;
-    border: 10px solid $color-claro;
     margin-bottom: 15px;
 }
 .btn-off{
