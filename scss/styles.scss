@@ -221,7 +221,7 @@ form{
         height: 250px;
     }
 }
-
+ 
 
 .novedades-promociones{
 width: 100%;
@@ -312,7 +312,15 @@ width: 100%;
     
 }
 
-
+.lanzamiento1{
+    @include carta_lanzamiento
+}
+.lanzamiento2{
+    @include carta_lanzamiento
+}
+.lanzamiento3{
+    @include carta_lanzamiento
+}
 .ofertas{   
     background-color: rgb(3, 3, 3);
     font-size: 18px;
@@ -775,9 +783,41 @@ a.nav-link{
     width: 80%;
     height: 40vh;
 }
-.carroza{
-    width: 90vw;
-    max-width: max-content;
+.oferta-negrita{
+    font-size: 1.2em;
+}
+.cuotas-ofertas{
+    font-size: 1.1em;
+}
+.lanzamiento1{
+    @include carta_lanzamiento_mobile
+}
+.lanzamiento1 img{
+    width: 80px;
+    height: 120px;
+    border: none;
+}
+.lanzamiento2{
+    @include carta_lanzamiento_mobile
+}
+.lanzamiento2 img{
+    width: 80px;
+    height: 120px;
+    border: none;
+}
+.lanzamiento3{
+    @include carta_lanzamiento_mobile
+    
+}
+.lanzamiento3 img{
+    width: 80px;
+    height: 120px;
+    border: none;
+    
+}
+.carousel-item img{
+    width: 100vw;
+    height: 250px;
 }
 .img-descuentos img{
     width: 100vw;

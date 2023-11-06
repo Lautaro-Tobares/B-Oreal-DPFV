@@ -312,6 +312,57 @@ form {
   background-color: #ed6fd3;
 }
 
+.lanzamiento1 {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5em;
+  margin: 0px auto 0px auto;
+  padding-top: 30px;
+  box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
+  margin-top: 30px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.507);
+}
+
+.lanzamiento2 {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5em;
+  margin: 0px auto 0px auto;
+  padding-top: 30px;
+  box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
+  margin-top: 30px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.507);
+}
+
+.lanzamiento3 {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5em;
+  margin: 0px auto 0px auto;
+  padding-top: 30px;
+  box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
+  margin-top: 30px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.507);
+}
+
 .ofertas {
   background-color: rgb(3, 3, 3);
   font-size: 18px;
@@ -831,9 +882,81 @@ p {
     width: 80%;
     height: 40vh;
   }
-  .carroza {
-    width: 90vw;
-    max-width: max-content;
+  .oferta-negrita {
+    font-size: 1.2em;
+  }
+  .cuotas-ofertas {
+    font-size: 1.1em;
+  }
+  .lanzamiento1 {
+    width: 30vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 0.6em;
+    margin: 0px auto 0px auto;
+    padding-top: 30px;
+    box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+  }
+  .lanzamiento1 img {
+    width: 80px;
+    height: 120px;
+    border: none;
+  }
+  .lanzamiento2 {
+    width: 30vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 0.6em;
+    margin: 0px auto 0px auto;
+    padding-top: 30px;
+    box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+  }
+  .lanzamiento2 img {
+    width: 80px;
+    height: 120px;
+    border: none;
+  }
+  .lanzamiento3 {
+    width: 30vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 0.6em;
+    margin: 0px auto 0px auto;
+    padding-top: 30px;
+    box-shadow: 8px -8px 8px 0px rgba(83, 82, 82, 0.4);
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+  }
+  .lanzamiento3 img {
+    width: 80px;
+    height: 120px;
+    border: none;
+  }
+  .carousel-item img {
+    width: 100vw;
+    height: 250px;
   }
   .img-descuentos img {
     width: 100vw;
