@@ -10,6 +10,9 @@
   text-align: center;
   justify-content: center;
 }
+.scrollable-container {
+  max-height: 300px;
+  overflow-y: auto;}
 
 .img-error {
   width: 500px;
