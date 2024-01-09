@@ -1,7 +1,7 @@
 document.getElementById('enviarBtn').addEventListener('click', function(event) {
     event.preventDefault(); 
   
-    // obtiene los valores dados por el usuario
+    // toma los valores dados por el usuario
     let nombre = document.getElementById('nombre').value;
     let apellido = document.getElementById('apellido').value;
     let email = document.getElementById('email').value;
