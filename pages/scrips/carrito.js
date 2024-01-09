@@ -104,15 +104,9 @@ function actualizarVistaCarrito() {
       itemContainer.appendChild(item);
       scrollableContainer.appendChild(itemContainer);
 
-      // Suma el precio del producto al total
-      total += producto.precio;
+     
     });
 
-    // Muestra el total después de haber recorrido todos los productos
-    let totalElement = document.createElement('div');
-    totalElement.textContent = 'TOTAL: $' + total.toFixed(2);
-    totalElement.className = 'text-right mt-3';
-    scrollableContainer.appendChild(totalElement);
   }
 }
 
