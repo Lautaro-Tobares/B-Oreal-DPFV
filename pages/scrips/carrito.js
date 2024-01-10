@@ -1,10 +1,16 @@
 let carrito = [];
 
+// Al cargar la página, intenta obtener el carrito desde localStorage
+document.addEventListener('DOMContentLoaded', function () {
+  carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  actualizarVistaCarrito();
+});
+
 // clic para los botones "AGREGAR+"
 let agregarBotones = document.querySelectorAll('.img-catalogo button');
 
-agregarBotones.forEach(function(boton) {
-  boton.addEventListener('click', function() {
+agregarBotones.forEach(function (boton) {
+  boton.addEventListener('click', function () {
     //info del producto
     let contenedorProducto = this.closest('.img-catalogo');
     let nombreProducto = contenedorProducto.querySelector('p').innerText;
@@ -23,6 +29,9 @@ agregarBotones.forEach(function(boton) {
 
     // agrega el producto al carrito
     carrito.push(producto);
+
+    // actualiza localStorage con el nuevo estado del carrito
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 
     // actualiza la vista del carrito después de agregar un producto
     actualizarVistaCarrito();
@@ -45,9 +54,7 @@ function actualizarVistaCarrito() {
     scrollableContainer.innerHTML = '<li><button class="dropdown-item" type="button">Tu carrito está vacío</button></li>';
   } else {
     // si hay productos, muestra c/u
-    let total = 0; // Total de la compra
-
-    carrito.forEach(function(producto, index) {
+    carrito.forEach(function (producto, index) {
       let itemContainer = document.createElement('div');
       itemContainer.className = 'd-inline-block';
 
@@ -79,7 +86,15 @@ function actualizarVistaCarrito() {
 
       // crea el p para mostrar el precio del producto
       let precio = document.createElement('p');
-      precio.textContent = 'Precio: $' + producto.precio.toFixed(2);
+
+      // Verifica si el precio es un número antes de llamar a toFixed()
+      if (typeof producto.precio === 'number') {
+        precio.textContent = 'Precio: $' + producto.precio.toFixed(2);
+      } else {
+        // Si no es un número, puedes manejarlo de alguna manera apropiada para tu caso
+        precio.textContent = 'Precio no válido';
+      }
+
       precio.className = 'card-text';
 
       //botón de eliminar
@@ -87,9 +102,12 @@ function actualizarVistaCarrito() {
       botonEliminar.className = 'btn btn-danger btn-sm mt-2';
       botonEliminar.type = 'button';
       botonEliminar.textContent = 'Eliminar';
-      botonEliminar.addEventListener('click', function() {
+      botonEliminar.addEventListener('click', function () {
         // elimina el producto del carrito
         carrito.splice(index, 1);
+
+        // actualiza localStorage con el nuevo estado del carrito
+        localStorage.setItem('carrito', JSON.stringify(carrito));
 
         // actualiza la vista del carrito después de eliminar
         actualizarVistaCarrito();
@@ -103,10 +121,7 @@ function actualizarVistaCarrito() {
       item.appendChild(cardBody);
       itemContainer.appendChild(item);
       scrollableContainer.appendChild(itemContainer);
-
-     
     });
-
   }
 }
 
