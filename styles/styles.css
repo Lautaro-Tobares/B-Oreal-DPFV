@@ -11,8 +11,10 @@
   justify-content: center;
 }
 .scrollable-container {
-  max-height: 300px;
-  overflow-y: auto;}
+  max-height: 400px !important;
+  height: 400px;
+  overflow-y: auto;
+}
 
 .img-error {
   width: 500px;
@@ -396,6 +398,7 @@ form {
   font-size: 20px;
   margin-top: 50px;
   text-align: center;
+  
 }
 
 /*trabaja con nosotros*/

@@ -1,6 +1,6 @@
 let carrito = [];
 
-// Al cargar la página, intenta obtener el carrito desde localStorage
+// localStorage
 document.addEventListener('DOMContentLoaded', function () {
   carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   actualizarVistaCarrito();
@@ -91,7 +91,7 @@ function actualizarVistaCarrito() {
       if (typeof producto.precio === 'number') {
         precio.textContent = 'Precio: $' + producto.precio.toFixed(2);
       } else {
-        // Si no es un número, puedes manejarlo de alguna manera apropiada para tu caso
+        
         precio.textContent = 'Precio no válido';
       }
 
@@ -122,6 +122,16 @@ function actualizarVistaCarrito() {
       itemContainer.appendChild(item);
       scrollableContainer.appendChild(itemContainer);
     });
+
+    
+    let botonFinalizarCompra = document.createElement('button');
+    botonFinalizarCompra.className = 'btn btn-success mt-3 mx-auto d-block';
+    botonFinalizarCompra.textContent = 'Finalizar Compra';
+    botonFinalizarCompra.addEventListener('click', function () {
+      mostrarFormularioCompra();
+    });
+
+    scrollableContainer.appendChild(botonFinalizarCompra);
   }
 }
 
@@ -135,8 +145,8 @@ function mostrarSweetAlertCarrito(nombreProductoAgregado) {
     confirmButtonText: 'Seguir comprando',
     cancelButtonText: 'Finalizar compra',
     customClass: {
-      confirmButton: 'btn btn-primary', // estilo del botón "Seguir comprando"
-      cancelButton: 'btn btn-danger'   // estilo del botón "Finalizar compra"
+      confirmButton: 'btn btn-primary',
+      cancelButton: 'btn btn-danger',
     }
   }).then((result) => {
     if (result.isConfirmed) {
